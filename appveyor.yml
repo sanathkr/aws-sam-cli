@@ -52,7 +52,7 @@ test_script:
     # - "flake8 tests\\unit tests\\integration"
     # - "pylint --rcfile .pylintrc samcli"
     # - "pytest -s -vv tests\\integration"
-    - "docker run --rm -v D:\\source:\\host busybox cat /host/README.md"
+    - "docker run --rm -v D:\\source:\\host busybox ls /host"
 
 
 
