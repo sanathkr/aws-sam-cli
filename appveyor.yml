@@ -32,7 +32,7 @@ install:
     # Make sure we are in the correct directory
     - ps: Get-Location
     - "cd D:\\source"
-    - Switch-DockerLinux
+    - ps: Switch-DockerLinux
   
     # Upgrade setuptools, wheel and virtualenv
 #     - "python -m pip install --upgrade setuptools wheel virtualenv"
@@ -52,7 +52,7 @@ test_script:
     # - "flake8 tests\\unit tests\\integration"
     # - "pylint --rcfile .pylintrc samcli"
     # - "pytest -s -vv tests\\integration"
-    - docker run --rm -v D:/source:/host busybox cat /host/README.md
+    - "docker run --rm -v D:\\source:\\host busybox cat /host/README.md"
 
 
 
