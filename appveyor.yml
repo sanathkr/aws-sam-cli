@@ -40,10 +40,10 @@ install:
     - "pip install -e \".[dev]\""
 
 test_script:
-    - "pytest --cov samcli --cov-report term-missing --cov-fail-under 95 tests\\unit"
-    - "flake8 samcli"
-    - "flake8 tests\\unit tests\\integration"
-    - "pylint --rcfile .pylintrc samcli"
+    # - "pytest --cov samcli --cov-report term-missing --cov-fail-under 95 tests\\unit"
+    # - "flake8 samcli"
+    # - "flake8 tests\\unit tests\\integration"
+    # - "pylint --rcfile .pylintrc samcli"
     - "pytest tests\\integration"
 
 
