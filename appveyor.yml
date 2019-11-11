@@ -38,7 +38,7 @@ for:
       - "python -m pip install --upgrade setuptools wheel virtualenv"
 
       # Install AWS CLI Globally outside of a venv.
-      - "pip install awscli"
+      - "python -m pip install awscli"
 
       # Create new virtual environment and activate it
       - "rm -rf venv"
